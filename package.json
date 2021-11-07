@@ -1,0 +1,24 @@
+{
+  "name": "bootstrap_lisch",
+  "version": "1.0.0",
+  "description": "Portfolio Project 1",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npm run lite",
+    "lite": "lite-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aerosarrows/bootstrap_project1.git"
+  },
+  "author": "Geoffrey Lisch",
+  "license": "ISC",
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  },
+  "bugs": {
+    "url": "https://github.com/aerosarrows/bootstrap_project1/issues"
+  },
+  "homepage": "https://github.com/aerosarrows/bootstrap_project1#readme"
+}
