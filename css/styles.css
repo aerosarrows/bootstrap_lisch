@@ -1,0 +1,49 @@
+body {
+    font-family: "Rubik";
+}
+
+h1,h2,h3 {
+    font-family: "Rubik", cursive;
+}
+
+h1 {
+    color: #FFF
+}
+
+.site-footer {
+    background-color: #181818;
+    padding: 10px 0;
+    width: 100vw;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.inner-footer {
+    display: block;
+    margin: 0 auto;
+    width: 1100px;
+    height: 100%;
+
+}
+
+.jumbotron {
+    margin: 0px;
+    padding: 30px;
+    background-image: linear-gradient(to right, #8B4513,#181818);
+}
+
+.jumbotron img{
+    width: 200px;
+    height: auto;
+}
+
+.row-content {
+    padding: 50px 0; 
+    border-bottom: 1px ridge;
+    min-height: 200px;
+
+}
+ 
+.navbar {
+    background-color: #BC8F8F;
+}
