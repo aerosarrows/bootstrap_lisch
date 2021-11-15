@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head> 
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+
+    <!-- Additional CSS must be placed after Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik" />
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <title>Welcome to Coffee Heaven</title>
+    
+</head>
+
+<body> 
+
+    <nav class="navbar navbar-expand-md navbar-light sticky-top border-bottom">  
+        <div class="container"> 
+                <a class="navbar-brand" href="index.html"><i class="fa fa-circle fa-lg"></i></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#greenCoffeeNavBar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="greenCoffeeNavBar">
+                <ul class="nav navbar-nav">
+                    <li><a class="nav-link" href="index.html"> Home</a></li>
+                    <li><a class="nav-link" href="inventory.html"> Inventory</a></li>
+                    <li class="active"><a class="nav-link" href="#"> Brewing</a></li>
+                    <li><a class="nav-link" href="about.html"> About Us</a></li>
+                </ul>
+                <ul class="nav navbar-nav ml-auto">
+                    <li><a class="nav-link" href="cart.html"> My Cart</a></li> 
+                    <li class="nav-item text-success my-auto" role="button" data-toggle="modal" data-target="#loginModal"> Login</li>
+                </ul>
+            </div>
+        </div>
+    </nav> 
+
+    <div id="loginModal" class="modal fade" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header ">
+                    <h3 class="modal-title">Login</h3>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <form>
+                            <div class="form-row">
+                                <div class="form-group col-12">
+                                    <label class="sr-only" for="loginEmail">Email Address</label>
+                                    <input type="email" class="form-control form-control-sm" id="loginEmail" placeholder="Enter email">
+                                </div>
+                                <div class="form-group col-12">
+                                    <label class="sr-only" for="loginPassword">Password</label>
+                                    <input type="password" class="form-control form-control-sm" id="loginPassword" placeholder="Password">
+                                </div>
+                                <div class="col">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox">
+                                        <label class="form-check-label">Remember me</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <button type="button" class="btn btn-secondary btn-sm ml-auto" data-dismiss="modal">Cancel</button>
+                                <button type="submit" class="btn btn-primary btn-sm ml-1"> Login </button>
+                            </div>
+                            <br>
+                            <div class="form-row">
+                                <div class="form-check ml-auto">
+                                    <a href="create.html">Create an account</a>
+                                </div>
+                            </div>
+                        </form>                
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <ol class="breadcrumb indigo lighten-6 first shadow-lg px-md-4">
+                    <li class="breadcrumb-item"><a href="index.html" class="text-muted"><i class="fa fa-home"></i> </a></li>
+                    <li class="breadcrumb-item active text-dark">Brewing</li>
+                </ol>
+                <h2>Brewing</h2>
+            </div>
+        </div>
+    </div>
+
+    <footer class="site-footer flex-shrink-0">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4 col-xs-6 d-flex align-items-stretch my-auto">
+                    <!-- <a href="index.html"><i class="fa fa-circle fa-lg my-2 mr-1"></i></a> -->
+                    <a href="index.html" class="text-dark my-auto mx-auto"><h3> Green.Coffee</h3></a>
+                </div>
+                <div class="col-sm-4 col-xs-6 text-center">
+                    <ul class="list-unstyled"><h5>Links</h5>
+                        <a href="inventory.html" class="text-muted"><li>Inventory</li></a>
+                        <a href="brewing.html" class="text-muted"><li>Brewing</li></a>
+                        <a href="contactus.html" class="text-muted"><li>Contact Us</li></a>
+                        <a href="cart.html" class="text-muted"><li>My Cart</li></a>
+                    </ul>
+                </div>
+                <div class="col-sm-4 col-xs-6 text-center">
+                    <h5>Socials</h5>
+                    <a class="btn btn-social-icon btn-instagram" href="http://instagram.com/"><i class="fa fa-instagram"></i></a>
+                    <a class="btn btn-social-icon btn-facebook" href="http://facebook.com/"><i class="fa fa-facebook"></i></a>
+                    <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter"></i></a>
+                    <a class="btn btn-social-icon btn-google" href="http://youtube.com/"><i class="fa fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+<!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
+<script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+<script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="main.js"></script>
+
+
+</body>
+</html>

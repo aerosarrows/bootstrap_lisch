@@ -19,6 +19,7 @@
     
 
 </head>
+
 <body> 
 
     <nav class="navbar navbar-expand-md navbar-light sticky-top border-bottom">  
@@ -42,62 +43,99 @@
         </div>
     </nav> 
 
+    <div id="loginModal" class="modal fade" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header ">
+                    <h3 class="modal-title">Login</h3>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <form>
+                            <div class="form-row">
+                                <div class="form-group col-12">
+                                    <label class="sr-only" for="loginEmail">Email Address</label>
+                                    <input type="email" class="form-control form-control-sm" id="loginEmail" placeholder="Enter email">
+                                </div>
+                                <div class="form-group col-12">
+                                    <label class="sr-only" for="loginPassword">Password</label>
+                                    <input type="password" class="form-control form-control-sm" id="loginPassword" placeholder="Password">
+                                </div>
+                                <div class="col">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox">
+                                        <label class="form-check-label">Remember me</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <button type="button" class="btn btn-secondary btn-sm ml-auto" data-dismiss="modal">Cancel</button>
+                                <button type="submit" class="btn btn-primary btn-sm ml-1"> Login </button>
+                            </div>
+                            <br>
+                            <div class="form-row">
+                                <div class="form-check ml-auto">
+                                    <a href="create.html">Create an account</a>
+                                </div>
+                            </div>
+                        </form>                
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     
 
 <div class="container">
     <div class="row">
-        <div class="col">
+        <div class="col-sm-12 col-xs-3 d-flex justify-content-center mx-auto">
             <meta charset="utf-8" />
-            <h1 class="text-center">Green Coffee</h1> 
+            <h1 class="text-center">Green.Coffee</h1> 
         </div>
     </div>
-    
-
-    <div class="container">
-        <div class="row">
-                <div class="col d-flex justify-content-center">
-                    <h3>Coffee Bean of the Month</h3>
-                </div>
-            <div class="row">
-                    <img class="img-fluid" alt="Coffee of the Month" src="rodrigo-flores-T5qjs-63kqQ-unsplash.jpg" />
-                    <!-- https://unsplash.com/photos/T5qjs-63kqQ -->
+    <div class="row">
+            <div class="col-sm-12 col-xs-3 d-flex justify-content-center mx-auto">
+                <h3>Coffee Bean of the Month</h3>
             </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12 col-xs-3 d-flex justify-content-center mx-auto">
+                <img class="img-fluid img-home" width="300px" alt="Coffee of the Month" src="rodrigo-flores-T5qjs-63kqQ-unsplash.jpg" />
+                <!-- https://unsplash.com/photos/T5qjs-63kqQ -->
         </div>
     </div>
 </div>
 
   
 
-    <footer class="site-footer fixed-bottom">
-        <div class="container">
-            <div class="row">
-                <div class="col">
-                    <h5>Links</h5>
-                    <ul class="list-unstyled">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="aboutus.html">About</a></li>
-                        <li><a href="#">Sites</a></li>
-                        <li><a href="contactus.html">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="col">
-                    <h5>Social</h5>
-                    <a class="btn btn-social-icon btn-instagram" href="http://instagram.com/"><i class="fa fa-instagram"></i></a>
-                    <a class="btn btn-social-icon btn-facebook" href="http://facebook.com/"><i class="fa fa-facebook"></i></a>
-                    <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter"></i></a>
-                    <a class="btn btn-social-icon btn-google" href="http://youtube.com/"><i class="fa fa-youtube"></i></a>
-                </div>
-                <div class="col">
-                    <h5>Contact</h5>
-                    <div class="row">
-                        <a role="button" class="btn btn-link" href="tel:+15125551234" data-toggle="tooltip" data-placement="bottom" title="1-512-555-1234"><i class="fa fa-phone"></i></a><br>
-                        <a role="button" class="btn btn-link" href="mailto:info@green.coffee" data-toggle="tooltip" data-placement="bottom"><i class="fa fa-envelope-o"></i></a>
-                    </div>
-                </div>
+<footer class="site-footer flex-shrink-0">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4 col-xs-6 d-flex align-items-stretch my-auto">
+                <!-- <a href="index.html"><i class="fa fa-circle fa-lg my-2 mr-1"></i></a> -->
+                <a href="index.html" class="text-dark my-auto mx-auto"><h3> Green.Coffee</h3></a>
+            </div>
+            <div class="col-sm-4 col-xs-6 text-center">
+                <ul class="list-unstyled"><h5>Links</h5>
+                    <a href="inventory.html" class="text-muted"><li>Inventory</li></a>
+                    <a href="brewing.html" class="text-muted"><li>Brewing</li></a>
+                    <a href="contactus.html" class="text-muted"><li>Contact Us</li></a>
+                    <a href="cart.html" class="text-muted"><li>My Cart</li></a>
+                </ul>
+            </div>
+            <div class="col-sm-4 col-xs-6 text-center">
+                <h5>Socials</h5>
+                <a class="btn btn-social-icon btn-instagram" href="http://instagram.com/"><i class="fa fa-instagram"></i></a>
+                <a class="btn btn-social-icon btn-facebook" href="http://facebook.com/"><i class="fa fa-facebook"></i></a>
+                <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter"></i></a>
+                <a class="btn btn-social-icon btn-google" href="http://youtube.com/"><i class="fa fa-youtube"></i></a>
             </div>
         </div>
-    </footer>
+    </div>
+</footer>
+
 
 <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
 <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
