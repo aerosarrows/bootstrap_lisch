@@ -17,7 +17,7 @@ h3 {
 }
 
 .site-footer .fa {
-  color: #228B22;
+  color: #000;
 }
 
 .site-footer {
@@ -94,3 +94,12 @@ h3 {
 
 
 }
+
+.hrmodal {
+  border: 0;
+  height: 3px;
+  background: #228B22;
+  background-image: linear-gradient(to right, #ccc, #228B22, #ccc);
+  size: 10;
+}
+
