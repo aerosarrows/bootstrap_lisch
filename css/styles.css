@@ -121,3 +121,11 @@ button h5 {
   color: #228B22;
   text-decoration: none;
 }
+
+thead.tablehead {
+  background-color:#228B22
+}
+
+thead tr {
+  color:rgb(216, 214, 214);
+}
