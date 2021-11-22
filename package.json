@@ -5,8 +5,15 @@
   "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "npm run lite",
-    "lite": "lite-server"
+    "start": "npm run watch:all",
+    "lite": "lite-server",
+    "watch:scss": "onchange 'css/*.scss' -- npm run scss",
+    "watch:all": "parallelshell 'npm run watch:scss' 'npm run lite'",
+    "copyfonts": "copyfiles -f node_modules/font-awesome/fonts/* dist/fonts",
+    "imagemin": "imagemin img/* -o dist/img",
+    "usemin": "usemin inventory.html -d dist --htmlmin -o dist/inventory.html && usemin brewing.html -d dist --htmlmin -o dist/brewing.html && usemin cart.html -d dist --htmlmin -o dist/cart.html &&  usemin about.html -d dist --htmlmin -o dist/about.html && usemin index.html -d dist --htmlmin -o dist/index.html",
+    "clean": "rimraf dist",
+    "build": "npm run clean && npm run imagemin && npm run copyfonts && npm run usemin"
   },
   "repository": {
     "type": "git",
@@ -15,7 +22,13 @@
   "author": "Geoffrey Lisch",
   "license": "ISC",
   "devDependencies": {
-    "lite-server": "^2.6.1"
+    "copyfiles": "^2.2.0",
+    "imagemin-cli": "^5.1.0",
+    "lite-server": "^2.6.1",
+    "onchange": "^7.0.0",
+    "parallelshell": "3.0.1",
+    "rimraf": "^3.0.2",
+    "usemin-cli": "^0.6.0"
   },
   "bugs": {
     "url": "https://github.com/aerosarrows/bootstrap_lisch/issues"
