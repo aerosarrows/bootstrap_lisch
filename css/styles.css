@@ -99,7 +99,7 @@ h3 {
 }
 
 button h5 {
-  background-color: #bd8258;
+  background-color: #613e25;
 }
 
 .brewphoto#grayscale img {
@@ -111,4 +111,13 @@ button h5 {
 .brewphoto#grayscale:hover img {
   -webkit-filter: grayscale(100);
   filter: grayscale(100);
+}
+
+.morebeans:active {
+  text-decoration: none;
+}
+
+.morebeans:hover {
+  color: #228B22;
+  text-decoration: none;
 }
