@@ -15,12 +15,11 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik" />
     <link rel="stylesheet" href="css/styles.css" />
 
-    <title>Welcome to Coffee Heaven</title>
+    <title>Green.Coffee Inventory</title>
     
 </head>
 
 <body> 
-
     <nav class="navbar navbar-expand-md navbar-light sticky-top border-bottom">  
         <div class="container"> 
                 <a class="navbar-brand" href="index.html"><i class="fa fa-circle fa-lg"></i></a>
@@ -102,7 +101,7 @@
                                 <p class="bg-light">ELEVATION</p>
                             </div>
                             <div class="col text-secondary">
-                                <p class=text-secondary> 6,296</p>
+                                <p class=text-secondary> 6,296'</p>
                             </div>
                         </div>
                          <div class="row">
@@ -157,7 +156,7 @@
                                 <p class="bg-light">ELEVATION</p>
                             </div>
                             <div class="col text-secondary">
-                                <p class=text-secondary> 3,845</p>
+                                <p class=text-secondary> 3,845'</p>
                             </div>
                         </div>
                          <div class="row">
@@ -212,7 +211,7 @@
                                 <p class="bg-light">ELEVATION</p>
                             </div>
                             <div class="col text-secondary">
-                                <p class=text-secondary>5,633</p>
+                                <p class=text-secondary>5,633'</p>
                             </div>
                         </div>
                          <div class="row">
@@ -263,85 +262,55 @@
         </div>
     </div>
     <br>
-    <div class="container">
+    <div class="container container-fluid">
         <div class="row">
             <div class="col-sm-4 col-xs-8">
-                <div id="accordion" class="myaccordion">
-                    <div class="card">
-                        <button class="btn btn-link collapsed text-dark" id="beanOneButton">
-                            <div class="card-header" id="coffeeFirstHeader">
-                                <h5 class="text-center my-auto">                                    
-                                    Ethiopia
-                                <p class="bean">Yirgacheffe</p>
-                                    <a class="btn btn-sm btn-white"  data-toggle="tooltip" data-placement="bottom" title="Powered by vemaps.com">
-                                        <!-- https://vemaps.com/ethiopia/et-07 -->
-                                        <img src="/img/et-07.png" width="100px">
-                                    </a>
-                                </h5>  
-                            </div>
-                            <div id="coffeeFirst" class="collapse" data-parent="#accordion">
-                                <div class="card-body">
-                                    Ethiopian natural processed coffee
-                                </div>  
-                            </div>
-                        </button> 
-                    </div>
+                <div class="card">
+                    <button class="btn btn-link collapsed text-warning" id="beanOneButton">
+                        <h5 class="text-center my-auto rounded">                                    
+                            Ethiopia
+                        </h5>
+                        <p class="bean">Yirgacheffe</p>
+                            <a class="btn btn-sm btn-white"  data-toggle="tooltip" data-placement="bottom" title="Powered by vemaps.com">
+                                <img src="/img/et-07.png" class="img-fluid">
+                            </a>
+                    </button> 
                 </div>
             </div>
             <div class="col-sm-4 col-xs-8">
-                <div id="accordion" class="myaccordion">
-                    <div class="card">
-                        <button class="btn btn-link collapsed text-dark" id="beanTwoButton">
-                            <div class="card-header" id="coffeeSecondHeader">
-                                <h5 class="text-center my-auto">
-                                        Costa Rica 
-                                        <p class="bean">Tarrazu</p> 
-                                    <a class="btn btn-white" data-toggle="tooltip" data-placement="bottom" title="Powered by vemaps.com">
-                                        <!-- https://vemaps.com/costa-rica/cr-07 -->
-                                        <img src="/img/cr-07.png" width="100px">
-                                    </a>
-                                </h5>  
-                            </div>
-                            <div id="coffeeSecond" class="collapse" data-parent="#accordion">
-                                <div class="card-body">
-                                        Costa Rican washed processed coffee
-                                </div>  
-                            </div>
-                        </button> 
-                    </div>
+                <div class="card">
+                    <button class="btn btn-link collapsed text-warning" id="beanTwoButton">
+                        <h5 class="text-center my-auto rounded">
+                                Costa Rica 
+                        </h5>
+                        <p class="bean">Tarrazu</p> 
+                            <a class="btn btn-white" data-toggle="tooltip" data-placement="bottom" title="Powered by vemaps.com">
+                                <img src="/img/cr-07.png" class="img-fluid">
+                            </a>
+                    </button> 
                 </div>
             </div>
             <div class="col-sm-4 col-xs-8">
-                <div id="accordion" class="myaccordion">
-                    <div class="card">
-                        <button class="btn btn-link collapsed text-dark" id="beanThreeButton">
-                            <div class="card-header" id="coffeeThirdHeader">
-                                <h5 class="text-center my-auto">
-                                        Indonesia  
-                                        <p class="bean">Bali Blue</p>
-                                    <a class="btn btn-white" data-toggle="tooltip" data-placement="bottom" title="Powered by vemaps.com">
-                                        <!-- https://vemaps.com/indonesia/id-07 -->
-                                        <img src="/img/id-07.png" width="100px">
-                                    </a>
-                                </h5>  
-                            </div>
-                            <div id="coffeeThird" class="collapse" data-parent="#accordion">
-                                <div class="card-body">
-                                        Indonesian washed processed coffee
-                                </div>  
-                            </div>
-                        </button>
-                    </div>
+                <div class="card">
+                    <button class="btn btn-link collapsed text-warning" id="beanThreeButton">
+                        <h5 class="text-center my-auto rounded">
+                                Indonesia  
+                        </h5>
+                        <p class="bean">Bali Blue</p>
+                            <a class="btn btn-white" data-toggle="tooltip" data-placement="bottom" title="Powered by vemaps.com">
+                                <img src="/img/id-07.png" class="img-fluid">
+                            </a>
+                    </button>
                 </div>
             </div>
         </div>
     </div>
-    <div class="row">
+    <!-- <div class="row">
         <div class="col d-flex justify-content-center"> 
-            <!-- https://unsplash.com/photos/6bXvYyAYVrE -->
-            <img class="rounded-circle" src="img//marjan-blan-marjanblan-6bXvYyAYVrE-unsplash.jpg" width = 400px>
+             https://unsplash.com/photos/6bXvYyAYVrE 
+            
         </div>      
-    </div>
+    </div> -->
 
     <footer class="site-footer flex-shrink-0">
         <div class="container">

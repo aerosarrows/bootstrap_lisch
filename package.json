@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/aerosarrows/bootstrap_project1.git"
+    "url": "git+https://github.com/aerosarrows/bootstrap_lisch.git"
   },
   "author": "Geoffrey Lisch",
   "license": "ISC",
@@ -18,9 +18,9 @@
     "lite-server": "^2.6.1"
   },
   "bugs": {
-    "url": "https://github.com/aerosarrows/bootstrap_project1/issues"
+    "url": "https://github.com/aerosarrows/bootstrap_lisch/issues"
   },
-  "homepage": "https://github.com/aerosarrows/bootstrap_project1#readme",
+  "homepage": "https://github.com/aerosarrows/bootstrap_lisch#readme",
   "dependencies": {
     "bootstrap": "^4.5.2",
     "font-awesome": "^4.7.0",
