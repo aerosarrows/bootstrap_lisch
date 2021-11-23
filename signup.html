@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head> 
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- build:css css/main.css -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <!-- endbuild -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik" />
+
+    <title>Green.coffee brewing</title>
+    
+</head>
+
+<body> 
+
+    <nav class="navbar navbar-expand-md navbar-light sticky-top border-bottom">  
+        <div class="container"> 
+                <a class="navbar-brand" href="index.html"><i class="fa fa-circle fa-lg"></i></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#greenCoffeeNavBar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="greenCoffeeNavBar">
+                <ul class="nav navbar-nav">
+                    <li><a class="nav-link" href="index.html"> Home</a></li>
+                    <li><a class="nav-link" href="inventory.html"> Inventory</a></li>
+                    <li class="active"><a class="nav-link" href="#"> Brewing</a></li>
+                    <li><a class="nav-link" href="about.html"> About Us</a></li>
+                </ul>
+                <ul class="nav navbar-nav ml-auto">
+                    <li><a class="nav-link" href="cart.html"> My Cart <span class="badge badge-secondary">0</span></a></li> 
+                    <li class="nav-item text-success my-auto" role="button" id="loginButton"> Login</li>
+                </ul>
+            </div>
+        </div>
+    </nav> 
+
+    <footer class="site-footer flex-shrink-0">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4 col-xs-6 d-flex align-items-stretch my-auto">
+                    <!-- <a href="index.html"><i class="fa fa-circle fa-lg my-2 mr-1"></i></a> -->
+                    <a href="index.html" class="text-dark my-auto mx-auto"><h3> Green.Coffee</h3></a>
+                </div>
+                <div class="col-sm-4 col-xs-6 text-center">
+                    <ul class="list-unstyled"><h5>Links</h5>
+                        <a href="inventory.html" class="text-muted"><li>Inventory</li></a>
+                        <a href="#" class="text-muted"><li>Brewing</li></a>
+                        <a href="about.html" class="text-muted"><li>About Us</li></a>
+                        <a href="cart.html" class="text-muted"><li>My Cart</li></a>
+                    </ul>
+                </div>
+                <div class="col-sm-4 col-xs-6 text-center">
+                    <h5>Socials</h5>
+                    <a class="btn btn-social-icon btn-instagram" href="http://instagram.com/"><i class="fa fa-instagram"></i></a>
+                    <a class="btn btn-social-icon btn-facebook" href="http://facebook.com/"><i class="fa fa-facebook"></i></a>
+                    <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter"></i></a>
+                    <a class="btn btn-social-icon btn-google" href="http://youtube.com/"><i class="fa fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+  <!-- build:js js/main.js  -->
+<script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+<script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="js/scripts.js"></script>
+<!-- endbuild -->
+
+</body>
+</html>
