@@ -97,10 +97,6 @@ h3 {
   height: 70vh;
 }
 
-button h5 {
-  background-color: #613e25;
-}
-
 .brewphoto#grayscale img {
   -webkit-filter: grayscale(0%);
   filter: grayscale(0%);
